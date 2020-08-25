@@ -58,6 +58,6 @@ const insertNodeAt = (index, address, linkedList, collection)=> {
 const deleteNodeAt = (index, linkedList, collection) => {
   let nodeToDelete = nodeAt(index, linkedList, collection);
   let address = nodeToDelete['next'];
-  let previousNode = nodeAt(index, linkedList, collection);
+  let previousNode = nodeAt(index-1, linkedList, collection);
   previousNode['next'] = address;
 }
